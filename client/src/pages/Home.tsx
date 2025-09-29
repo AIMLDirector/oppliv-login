@@ -24,14 +24,16 @@ const Home: React.FC = () => {
     }
   };
 
-  const handleError = () => {
+  const handleError1 = () => {
     console.error('Login failed');
   };
+
+ 
 
   return (
     <div>
       <h1>Google Authentication with TypeScript</h1>
-      <GoogleLogin onSuccess={handleSuccess} onError={handleError} />
+      <GoogleLogin onSuccess={handleSuccess} onError={handleError1} />
     </div>
   );
 };
